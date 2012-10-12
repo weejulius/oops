@@ -16,3 +16,6 @@ debug
 
 git flow
 
+featherless with terminal
+
+no blocking & multi-core
