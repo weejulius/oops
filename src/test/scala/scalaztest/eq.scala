@@ -14,5 +14,4 @@ class eq extends Specification {
       "Hello world" must endWith("world")
     }
   }
-
 }
