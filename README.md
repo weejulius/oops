@@ -27,6 +27,7 @@ Feature
 * memory has type and level, for example,hard, easy, advanced
 * user can create a memory from scratch
 * add tip and thought/idea
+* security against tip
 
 Todo List
 ---------
