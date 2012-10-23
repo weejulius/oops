@@ -10,10 +10,7 @@ resolvers += "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/snapshot
 
 resolvers ++= Seq("snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
                     "releases"  at "http://oss.sonatype.org/content/repositories/releases")
- 
-libraryDependencies ++= Seq(
-  "org.scalaz" % "scalaz-core" % "7.0.0-M3" cross CrossVersion.full
-)
+
 
 libraryDependencies ++= Seq(
    "org.specs2" %% "specs2" % "1.13-SNAPSHOT" % "test"

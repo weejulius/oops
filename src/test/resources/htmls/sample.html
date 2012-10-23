@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh">
+
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>  Wayland 1.0 &#8212; LinuxTOY</title>
+
+    <link rel="stylesheet" href="http://linuxtoy.org/wp-content/themes/be/style.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://linuxtoy.org/favicon.ico" /><!-- leave this for stats -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/linuxtoy" />
+    <link rel="pingback" href="http://linuxtoy.org/xmlrpc.php" />
+
+    <link rel="canonical" href="http://linuxtoy.org/archives/wayland-1-0.html" />
+
+    <link rel="alternate" type="application/rss+xml" title="LinuxTOY &raquo; Wayland 1.0 Comments Feed" href="http://linuxtoy.org/archives/wayland-1-0.html/feed" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://linuxtoy.org/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://linuxtoy.org/wp-includes/wlwmanifest.xml" />
+    <link rel='prev' title='Ubuntu 12.10' href='http://linuxtoy.org/archives/ubuntu-12-10.html' />
+    <link rel='canonical' href='http://linuxtoy.org/archives/wayland-1-0.html' />
+    <link rel='shortlink' href='http://linuxtoy.org/?p=6405' />
+    <link type="text/css" rel="stylesheet" href="http://linuxtoy.org/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/shCore.css"></link>
+    <link type="text/css" rel="stylesheet" href="http://linuxtoy.org/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/shThemeDefault.css"></link>
+</head>
+
+<body id="sp">
+<div id="page">
+<div id="header">
+    <h1><a href="http://linuxtoy.org/">LinuxTOY</a></h1>
+
+    <form action="http://linuxtoy.org/index.php" method="get" onsubmit="location.href='http://linuxtoy.org/search/' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;">
+
+        <ul id="hnav">
+            <li class="current_page_item"><a href="http://linuxtoy.org">Home</a></li>
+            <li class="page_item page-item-82"><a href="http://linuxtoy.org/archives">Archives</a></li>
+            <li class="page_item page-item-2303"><a href="http://linuxtoy.org/download">Download</a></li>
+            <li class="page_item page-item-55"><a href="http://linuxtoy.org/faq">FAQs</a></li>
+            <li class="page_item page-item-44"><a href="http://linuxtoy.org/contact">Contact</a></li>
+            <li><a href="http://linuxtoy.org/wp-login.php">Log in</a></li>
+            <li id="search"><input type="text" size="30" id="s" name="s" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" /></li>
+        </ul>
+    </form>
+
+    <p class="position">Home &raquo; Wayland 1.0</p>
+</div><!--#header-->
+<div class="navposts">
+    <p class="prev">&laquo; <a href="http://linuxtoy.org/archives/ubuntu-12-10.html" rel="prev">Ubuntu 12.10</a></p>        </div>
+
+<div id="main">
+<!-- google_ad_section_start -->
+
+<div id="side-r">
+    <div class="tab">LinuxTOY 是一个致力于提供 Linux 相关资讯的专题站点。如果您发现了好用好玩的 Linux 东东并愿意发扬自由、分享的精神，可以点击顶部导航 Contact 按钮进行投稿。</div>
+    <div class="tab">
+        <ul>
+            <li class="coins"><a href="http://linuxtoy.org/faq/donate" title="捐助本站">捐助本站</a></li>
+            <li class="feed"><a href="http://feeds.feedburner.com/linuxtoy" title="Subscribe in a reader">Subscribe in a reader</a> (<a href="http://linuxtoy.org/feed/">original feed</a>)</li>
+            <li class="email"><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=384812" title="Subscribe by Email">Subscribe by Email</a></li>
+            <li class="twitter"><a href="https://twitter.com/Linuxtoy" title="Follow us on Twitter">Follow us on Twitter</a></li>
+            <li class="identica"><a href="http://identi.ca/linuxtoy" title="Follow us on Identi.ca">Follow us on Identi.ca</a></li>
+            <li class="gplus"><a href="https://plus.google.com/b/101096637428284023293/" title="Linuxtoy on G+">Linuxtoy on G+</a></li>
+        </ul></div>
+    <div class="tab">
+        <ul>
+            <li class="tla">静态文件存储由<a href="https://www.upyun.com/?md=linuxtoy" title="又拍云存储">又拍云存储</a>提供</li>
+
+            <li class="tla"> <a href="http://subnixus.com">Windows Errors</a> </li>
+            <li class="tla"><a href="https://www.dropbox.com/referrals/NTI4NTgyMTk" title="Dropbox">Free Online Storage Space</a></li>
+            <li class="tla"><a href="http://www.amazon.cn/gp/search?ie=UTF8&keywords=linux&tag=linuxtoy-23&index=books&linkCode=ur2&camp=536&creative=3200" title="Linux books">Linux Books</a></li>
+        </ul></div>
+    <h2>Popular entries</h2>
+    <ul>
+        <li><a href="/archives/the-perfect-linux-desktop-arch-linux-2007-08-2-1.html">Archlinux 安装指南</a></li>
+        <li><a href="/archives/unix-linux-command-cheat-sheet.html">Unix/Linux 命令速查表</a></li>
+        <li><a href="/archives/efficient-editing-with-vim.html">高效率编辑器 Vim</a></li>
+        <li><a href="/archives/wget-tips.html">Wget 使用技巧</a></li>
+        <li><a href="/archives/playing-around-with-mplayer.html">玩转 MPlayer</a></li>
+        <li><a href="/archives/awesome.html">平铺式窗口管理器 Awesome</a></li>
+        <li><a href="/archives/3_free_antivirus_under_linux.html">三款 Linux 下的免费桌面级杀毒软件</a></li>
+        <li><a href="/archives/openbox-getting-started-guide.html">窗口管理器 Openbox 入门指南</a></li>
+        <li><a href="/archives/minimalist-install-of-ubuntu.html">最小化安装 Ubuntu</a></li>
+        <li><a href="/archives/5-desktop-environment-for-linux.html">五个你可能不知道的 Linux 桌面环境</a></li>
+        <li><a href="/archives/the-7-deadly-linux-commands.html">7 个致命的 Linux 命令</a></li>
+        <li><a href="/archives/lightweight-desktop-compare.html">很轻很强大：轻量级桌面环境比较</a></li>
+        <li><a href="/archives/gnome-shell-intro.html">GNOME Shell 介绍</a></li>
+        <li><a href="/archives/zsh.html">终极 Shell——Zsh</a></li>
+        <li><a href="/archives/6-of-the-best-free-linux-cad-software.html">6 款高品质的免费 Linux CAD 应用程序</a></li>
+        <li><a href="/archives/25-linux-twitterers.html">25+ 个值得跟随的 Linux 相关 Twitter 帐号</a></li>
+        <li><a href="/archives/3-standalone-flash-player-under-linux.html">Linux 下的三款 Flash 独立播放器</a></li>
+        <li><a href="/archives/game_emulator_for_linux.html">Linux 下的几个游戏模拟器</a></li>
+        <li><a href="/archives/musca.html">平铺式窗口管理器 Musca 初体验</a></li>
+        <li><a href="/archives/history-command-usage-examples.html">History（历史）命令用法 15 例</a></li>
+        <li><a href="/archives/fluxbox_config.html">Fluxbox 配置</a></li>
+        <li><a href="/archives/the-best-tips-and-tricks-for-bash.html">bash 使用技巧</a></li>
+        <li><a href="/archives/10-oreilly-books.html">10 本 O'Reilly 出版的免费好书</a></li>
+    </ul>
+</div><!--side-r-->
+
+
+<div id="story">
+    <div class="post" id="post-6405">
+        <h2>Wayland 1.0</h2>
+        <p class="postmeta">2012-10-23 <a href="http://linuxtoy.org/archives/author/lovenemesis" title="Posts by 黑日白月" rel="author">黑日白月</a> Posted in <a href="http://linuxtoy.org/category/apps/server" title="View all posts in Server" rel="category tag">Server</a><span class="rss" title="comment RSS of this post"><a href='http://linuxtoy.org/archives/wayland-1-0.html/feed'>RSS</a></span></p>
+        <div class="entry">
+            <div style="float:right; padding-left:5px;"><script type="text/javascript"><!--
+google_ad_client = "pub-9432205671574187";
+//LT, 300x250
+google_ad_slot = "9869120281";
+google_ad_width = 300;
+google_ad_height = 250;
+//--></script>
+                <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script></div>
+            <p>X11 Server 替代品 Wayland 发布 1.0 正式版本，宣布了 API/协议稳定。<span id="more-6405"></span></p>
+
+            <p>Wayland 作为下一代的图形服务器，目的是替代有 25 年历史的 X11 Server。Wayland 关注于近年来 Linux 在桌面领域的改善，通过将<strong>部分图像处理工作交由 Linux 内核提供的 GEM(Graphic Execution Manager)和 KMS(Kernel Mode-Setting)</strong>实现，大幅度缩减了图形服务器的体积和工作开销。</p>
+
+            <p>除此之外，Wayland 还提供了<strong>运用 EGL 或 GLX 的混合器 Weston</strong> ，充分利用客户端直接渲染的方式，可以有效的提高图形界面的相应速度，并且实现诸如异性窗口等原先难以达到的功能。</p>
+
+            <p>Wayland 的专注在带来更高性能的同时引入了一些弊端，比如尚未实现类似 X11 Server 一样的远程网络显示，过分依赖 Linux 内核导致难以移植到其他类 Unix 操作系统上，以及<strong>对于 KMS 的依赖导致短期内不会有闭源驱动厂商</strong>支持等。</p>
+
+            <p>Wayland 1.0 的发布 Linux 桌面最终用户来说意义不大，各大<strong>今年末甚至明年初发布的发行版恐怕仍将默认使用 X11 Server 作为图形服务器</strong>。对于各种桌面环境和 GUI 工具集开发者意义则代表着他们可以开始参照承诺未来版本向后兼容的 Wayland 1.0 的 API 进行迁移工作。</p>
+
+            <p><a href="http://lists.freedesktop.org/archives/wayland-devel/2012-October/005967.html">官方发布公告及源代码包下载</a></p>
+
+            <p>消息来源：<a href="http://www.phoronix.com/scan.php?page=news_item&#038;px=MTIxMzA">Phoronix</a></p>
+            <!-- google_ad_section_end -->
+            <p><strong>Read More:</strong></p>
+            <ul class="entrylist"><li>&raquo; <a href="http://linuxtoy.org/archives/%e7%9f%ad%e6%b6%88%e6%81%af%ef%bc%9afcitx%e3%80%81libvpx-%e5%92%8c-wayland.html" rel="bookmark" title="Permanent Link: 短消息：Fcitx、libvpx 和 Wayland">短消息：Fcitx、libvpx 和 Wayland</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/wayland-add-client-fading-support.html" rel="bookmark" title="Permanent Link: Wayland 增加客户端淡出功能">Wayland 增加客户端淡出功能</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/two-new-possible-features-on-fedora-15.html" rel="bookmark" title="Permanent Link: Fedora 15 的两项新功能">Fedora 15 的两项新功能</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/gtk-300.html" rel="bookmark" title="Permanent Link: GTK+ 3.0.0">GTK+ 3.0.0</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/nouveau-kernel-2633.html" rel="bookmark" title="Permanent Link: Nouveau 的 DRM 组件将（可能？）进入 Kernel 2.6.33">Nouveau 的 DRM 组件将（可能？）进入 Kernel 2.6.33</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/amd-joins-meego-project.html" rel="bookmark" title="Permanent Link: AMD 加入 MeeGo 项目">AMD 加入 MeeGo 项目</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/richard-hughes-with-color-management-on-linux-gnome.html" rel="bookmark" title="Permanent Link: Richard Hughes 和 Linux, GNOME 上的色彩管理">Richard Hughes 和 Linux, GNOME 上的色彩管理</a></li><li>&raquo; <a href="http://linuxtoy.org/archives/compare-linux-driver-support-between-three-major-gpus.html" rel="bookmark" title="Permanent Link: 浅析三大主流显卡厂商对 Linux 的驱动支持">浅析三大主流显卡厂商对 Linux 的驱动支持</a></li></ul>
+        </div><!--.entry-->
+        <p class="postmeta">Tags: <a href="http://linuxtoy.org/tag/wayland" rel="tag">wayland</a></p>    </div><!--.post-->
+
+
+    <h3 id="comments">10 Comments</h3>
+
+    <ol class="commentlist">
+        <li class="oddbox" id="comment-294834">
+            <span class="count">1</span>
+            <cite>lightning1141</cite>
+            <small>Commented <a href="#comment-294834"> @ 2012-10-23 12:55</a><img style="cursor:pointer;" onclick='yus_replyTo("294834", "lightning1141")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>哇</p>    		</li>
+        <li class="box" id="comment-294835">
+            <span class="count">2</span>
+            <cite><a href='http://www.jactry.com' rel='external nofollow' class='url'>Jactry</a></cite>
+            <small>Commented <a href="#comment-294835"> @ 2012-10-23 13:03</a><img style="cursor:pointer;" onclick='yus_replyTo("294835", "Jactry")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>会是Linux桌面另一个时代的开端吗？~</p>    		</li>
+        <li class="oddbox" id="comment-294836">
+            <span class="count">3</span>
+            <cite>pp</cite>
+            <small>Commented <a href="#comment-294836"> @ 2012-10-23 13:18</a><img style="cursor:pointer;" onclick='yus_replyTo("294836", "pp")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>看看哪个发行版跟进得最快</p>    		</li>
+        <li class="box" id="comment-294837">
+            <span class="count">4</span>
+            <cite><a href='http://terry.im' rel='external nofollow' class='url'>Terry</a></cite>
+            <small>Commented <a href="#comment-294837"> @ 2012-10-23 13:28</a><img style="cursor:pointer;" onclick='yus_replyTo("294837", "Terry")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>KMS Kernel 拼错了，囧</p>
+
+            <p>Linux 桌面将迎来革命么？拭目以待。估计 arch 会很快跟进...</p>    		</li>
+        <li class="oddbox" id="comment-294838">
+            <span class="count">5</span>
+            <cite>gamedragon</cite>
+            <small>Commented <a href="#comment-294838"> @ 2012-10-23 13:34</a><img style="cursor:pointer;" onclick='yus_replyTo("294838", "gamedragon")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>toolkit不跟进的话，光上个Wayland也没用啊。</p>    		</li>
+        <li class="box" id="comment-294839">
+            <span class="count">6</span>
+            <cite>DBJCK</cite>
+            <small>Commented <a href="#comment-294839"> @ 2012-10-23 13:37</a><img style="cursor:pointer;" onclick='yus_replyTo("294839", "DBJCK")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>要论快，肯定是fedora和Gentoo跟进得最快.估计还得一、两年才用得上。</p>    		</li>
+        <li class="oddbox" id="comment-294840">
+            <span class="count">7</span>
+            <cite>SuperCat</cite>
+            <small>Commented <a href="#comment-294840"> @ 2012-10-23 14:39</a><img style="cursor:pointer;" onclick='yus_replyTo("294840", "SuperCat")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>@gamedragon GTK+和Qt早就跟进了, Wayland后端去年貌似就有了</p>    		</li>
+        <li class="box" id="comment-294841">
+            <span class="count">8</span>
+            <cite>npnufn</cite>
+            <small>Commented <a href="#comment-294841"> @ 2012-10-23 14:45</a><img style="cursor:pointer;" onclick='yus_replyTo("294841", "npnufn")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>Archlinux的Wiki上说GTK和QT都支持wayland，只是archlinux的仓库里的gtk没有开启支持。需要自己编译。</p>    		</li>
+        <li class="oddbox" id="comment-294845">
+            <span class="count">9</span>
+            <cite>Atone</cite>
+            <small>Commented <a href="#comment-294845"> @ 2012-10-23 18:21</a><img style="cursor:pointer;" onclick='yus_replyTo("294845", "Atone")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>不知道何时才能应用到主流发行版上啊。</p>    		</li>
+        <li class="box" id="comment-294849">
+            <span class="count">10</span>
+            <cite><a href='http://blog.tektea.com' rel='external nofollow' class='url'>茶话汇</a></cite>
+            <small>Commented <a href="#comment-294849"> @ 2012-10-23 22:35</a><img style="cursor:pointer;" onclick='yus_replyTo("294849", "茶话汇")' title="Reply to this comment" alt="Reply to this comment" src="http://linuxtoy.org/wp-content/plugins/reply-to/reply.png" />
+            </small>
+            <p>图形处理最好的系统是不是iOS？貌似搞设计的都习惯用Apple的产品，或许是为了摆样子，呵呵。</p>    		</li>
+    </ol>
+
+
+    <div id="respond">
+
+        <form action="http://linuxtoy.org/wp-comments-post.php" method="post" id="commentform">
+
+            <p class="cf_info"><input type="text" name="author" id="author" value="" size="30" tabindex="1" /><label for="author">Name (required)</label></p>
+            <p class="cf_info"><input type="text" name="email" id="email" value="" size="30" tabindex="2" /><label for="email">Mail (will not be published) (required)</label></p>
+            <p class="cf_info"><input type="text" name="url" id="url" value="" size="30" tabindex="3" /><label for="url">Website</label></p>
+
+            <p class="cf_info"><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+            <p class="aright cf_info"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+                <input type="hidden" name="comment_post_ID" value="6405" /></p>
+            <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9548dac139" /></p>    <script type="text/javascript">
+            //<![CDATA[
+            function yus_replyTo(commentID,author) {
+            var inReplyTo='@<a href="#comment-'+commentID+'">'+author+'<\/a>: ';
+            var myField;
+            if (document.getElementById('comment') && document.getElementById('comment').type == 'textarea') {
+            myField = document.getElementById('comment');
+            } else {
+            return false;
+            }
+            if (document.selection) {
+            myField.focus();
+            sel = document.selection.createRange();
+            sel.text = inReplyTo;
+            myField.focus();
+            }
+            else if (myField.selectionStart || myField.selectionStart == '0') {
+            var startPos = myField.selectionStart;
+            var endPos = myField.selectionEnd;
+            var cursorPos = endPos;
+            myField.value = myField.value.substring(0, startPos)
+            + inReplyTo
+            + myField.value.substring(endPos, myField.value.length);
+            cursorPos += inReplyTo.length;
+            myField.focus();
+            myField.selectionStart = cursorPos;
+            myField.selectionEnd = cursorPos;
+            }
+            else {
+            myField.value += inReplyTo;
+            myField.focus();
+            }
+            }
+            //]]>
+        </script>
+
+
+
+            <p style="clear: both;" class="subscribe-to-comments">
+                <input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+                <label for="subscribe">Notify me of followup comments via e-mail</label>
+            </p>
+
+
+
+        </form>
+    </div><!--#respond-->
+</div><!--#story-->
+</div><!--#main-->
+<div class="navposts">
+    <p class="prev">&laquo; <a href="http://linuxtoy.org/archives/ubuntu-12-10.html" rel="prev">Ubuntu 12.10</a></p>        </div>
+<div id="footer">
+    <p><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">(cc)</a> LinuxTOY, Designed by <a href="http://yx.takeback.net/" title="Dark's blog">Dark</a>. Be Valid <a href="http://validator.w3.org/check/referer">Xhtml 1.1</a>. A better web experience in Firefox. 43 queries in 0.224s. <span class="rss"><a href="http://feeds.feedburner.com/linuxtoy" title="订阅整站 RSS">RSS</a></span> (Entries).</p>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-349050-2";
+        urchinTracker();
+    </script>
+
+</div>
+</div><!--#page-->
+
+<!-- SyntaxHighlighter Stuff -->
+<script type="text/javascript" src="http://linuxtoy.org/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/src/shCore.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

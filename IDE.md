@@ -10,7 +10,7 @@ find by keyword
 navigate source : auto 
 navigate definition
 
-rename occurencies
+rename occurrences
 
 debug
 
