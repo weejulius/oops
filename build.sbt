@@ -4,7 +4,7 @@ name := "oopsday"
 
 version := "0.1"
 
-scalaVersion := "2.9.2"
+scalaVersion := "2.10.0-RC1"
  
 resolvers += "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/snapshots/"
 
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-   "org.specs2" %% "specs2" % "1.12.2" % "test"
+   "org.specs2" %% "specs2" % "1.13-SNAPSHOT" % "test"
 )
 
 initialCommands in console := "import scalaz._, Scalaz._"
