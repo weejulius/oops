@@ -4,6 +4,7 @@
 package com.oopsday.adrop.domain.memory
 
 import org.specs2.mutable._
+import org.clapper.markwrap._
 
 class ExtractKnowledgeFromHtmlSpec extends Specification{ override def is=
 
@@ -12,20 +13,30 @@ class ExtractKnowledgeFromHtmlSpec extends Specification{ override def is=
   "In order to keep the useful knowledge from websites" ^p^
   "As a user I want to extract knowledge from the html pages"  ^p
 
-  "Keep the title of html page" >>{
+  "remain the body of html page" >>{
      html=
        """
-         <p>THis is a paragraph
-         </p>
+          <html>
+          <head>
+            <title> I am title</title>
+          </head>
+          <body>
+          I am body
+          </body>
+          </html>
        """
-    extract(html) must_==
+    body(html) must_==
       """
-       THis is a paragraph
+       I am body
       """
   }
 
+  class parser{
 
-  var html:String=null;
+    val parser = MarkWrap.parserFor(MarkupType.PlainText)
+    def obtain(val nodePath:String)
+  }
+  var html:String=null
 
 }
 
